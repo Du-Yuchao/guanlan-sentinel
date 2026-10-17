@@ -1,0 +1,8 @@
+{
+  "assets": [
+    {"name":"教学推理服务 · 待升级","product":"Ollama","version":"0.1.33","environment":"实验环境","owner":"推理平台组","exposure":"internal"},
+    {"name":"教学推理服务 · 修复对照","product":"Ollama","version":"0.1.34","environment":"实验环境","owner":"推理平台组","exposure":"internal"},
+    {"name":"模型编排实验服务","product":"llama-cpp-python","version":"0.2.71","environment":"实验环境","owner":"应用研发组","exposure":"internal"}
+  ]
+}
+

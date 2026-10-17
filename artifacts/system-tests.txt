@@ -1,0 +1,95 @@
+TAP version 13
+# Subtest: numeric version comparison respects patch order and missing components
+ok 1 - numeric version comparison respects patch order and missing components
+  ---
+  duration_ms: 0.7045
+  ...
+# Subtest: version range boundaries are inclusive at start, exclusive at fixed
+ok 2 - version range boundaries are inclusive at start, exclusive at fixed
+  ---
+  duration_ms: 0.4168
+  ...
+# Subtest: missing ranges never assert safety and unrelated products do not match
+ok 3 - missing ranges never assert safety and unrelated products do not match
+  ---
+  duration_ms: 0.1607
+  ...
+# Subtest: multiple vulnerable release branches are evaluated independently
+ok 4 - multiple vulnerable release branches are evaluated independently
+  ---
+  duration_ms: 0.3438
+  ...
+# Subtest: evidence hashes detect content changes and remain stable for same content
+ok 5 - evidence hashes detect content changes and remain stable for same content
+  ---
+  duration_ms: 0.225
+  ...
+# Subtest: unknown explicit CVE is never replaced with a similar known identifier
+ok 6 - unknown explicit CVE is never replaced with a similar known identifier
+  ---
+  duration_ms: 0.9961
+  ...
+# Subtest: static application serves without exposing server source
+ok 7 - static application serves without exposing server source
+  ---
+  duration_ms: 185.04
+  ...
+# Subtest: real evidence seed and filters work
+ok 8 - real evidence seed and filters work
+  ---
+  duration_ms: 6.5004
+  ...
+# Subtest: detail provides evidence and graph edges reference existing nodes
+ok 9 - detail provides evidence and graph edges reference existing nodes
+  ---
+  duration_ms: 7.9247
+  ...
+# Subtest: asset import retains vulnerable and patched version distinction
+ok 10 - asset import retains vulnerable and patched version distinction
+  ---
+  duration_ms: 9.5087
+  ...
+# Subtest: CycloneDX SBOM is accepted and invalid payload is rejected
+ok 11 - CycloneDX SBOM is accepted and invalid payload is rejected
+  ---
+  duration_ms: 6.0209
+  ...
+# Subtest: defensive system-prompt leakage questions are not treated as secret extraction
+ok 12 - defensive system-prompt leakage questions are not treated as secret extraction
+  ---
+  duration_ms: 4.557
+  ...
+# Subtest: grounded multi-document answers expose citations and local mode
+ok 13 - grounded multi-document answers expose citations and local mode
+  ---
+  duration_ms: 3.4837
+  ...
+# Subtest: unknown facts and instruction injection cannot produce ungrounded claims
+ok 14 - unknown facts and instruction injection cannot produce ungrounded claims
+  ---
+  duration_ms: 4.7484
+  ...
+# Subtest: offline run executes persisted pipeline and avoids duplicate records
+ok 15 - offline run executes persisted pipeline and avoids duplicate records
+  ---
+  duration_ms: 24.4133
+  ...
+# Subtest: monitor can be configured without starting immediately and report downloads
+ok 16 - monitor can be configured without starting immediately and report downloads
+  ---
+  duration_ms: 4.017
+  ...
+# Subtest: cross-origin writes are rejected
+ok 17 - cross-origin writes are rejected
+  ---
+  duration_ms: 1.6988
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 449.0465
