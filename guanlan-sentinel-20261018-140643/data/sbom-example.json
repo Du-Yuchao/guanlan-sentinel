@@ -1,0 +1,11 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 1,
+  "metadata": {"component": {"type":"application","name":"AI teaching lab"}},
+  "components": [
+    {"type":"application","name":"ollama","version":"0.1.33","purl":"pkg:generic/ollama@0.1.33"},
+    {"type":"library","name":"llama-cpp-python","version":"0.2.71","purl":"pkg:pypi/llama-cpp-python@0.2.71"}
+  ]
+}
+

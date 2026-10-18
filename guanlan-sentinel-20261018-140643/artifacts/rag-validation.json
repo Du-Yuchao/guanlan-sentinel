@@ -1,0 +1,26 @@
+{
+  "verifiedAt": "2026-10-18T05:56:21.9937333Z",
+  "automatedChecks": {
+    "evidence": "artifacts/system-tests.txt",
+    "command": "node --experimental-sqlite --test --test-reporter=spec tests/*.test.mjs",
+    "total": 143,
+    "failed": 0,
+    "passed": 143
+  },
+  "modelProtocolCoverage": [
+    "OpenAI-compatible Chat Completions",
+    "Anthropic Messages"
+  ],
+  "scope": "Temporary local mock model APIs and isolated test databases; no real provider key or paid model request used.",
+  "browserChecks": [
+    "Model settings form and protocol/key/asset controls",
+    "Unsaved connection test failure is shown without saving settings",
+    "Existing Ollama advisory retrieval and actual evidence link"
+  ],
+  "limitations": [
+    "Real provider compatibility, model availability and quota depend on the user configuration.",
+    "Citation validation checks structure, not semantic correctness.",
+    "No embedding model or vector database is claimed."
+  ],
+  "configuration": "No model service or API key was configured in the user runtime during these checks."
+}

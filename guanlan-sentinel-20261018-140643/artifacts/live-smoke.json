@@ -1,0 +1,338 @@
+{
+  "checkedAt": "2026-10-17T16:45:20.550Z",
+  "health": {
+    "ok": true,
+    "name": "观澜 SENTINEL",
+    "version": "1.0.0",
+    "time": "2026-10-17T16:45:20.518Z",
+    "mode": {
+      "llm": false,
+      "label": "本地证据检索"
+    },
+    "database": "sqlite",
+    "activeRun": null
+  },
+  "run": {
+    "id": "RUN-b1562598",
+    "mode": "live",
+    "status": "partial",
+    "startedAt": "2026-10-17T16:44:53.204Z",
+    "finishedAt": "2026-10-17T16:45:03.914Z",
+    "steps": [
+      {
+        "id": "plan",
+        "name": "规划任务",
+        "status": "completed",
+        "detail": "已规划 7 类来源；固定白名单公开来源，执行受限采集；无主动扫描",
+        "durationMs": 0,
+        "startedAt": "2026-10-17T16:44:53.206Z",
+        "count": 7,
+        "finishedAt": "2026-10-17T16:44:53.209Z"
+      },
+      {
+        "id": "collect",
+        "name": "采集来源",
+        "status": "completed",
+        "detail": "6 个主站成功，1 个使用官方备用，0 个失败；获取 33 条公告/论文。固定页面检查仅记录变更哈希。",
+        "durationMs": 10567,
+        "startedAt": "2026-10-17T16:44:53.213Z",
+        "count": 33,
+        "finishedAt": "2026-10-17T16:45:03.783Z"
+      },
+      {
+        "id": "normalize",
+        "name": "归一去重",
+        "status": "completed",
+        "detail": "归一 33 条，批内去重 0 条；以 ID 持久化合并",
+        "durationMs": 1,
+        "startedAt": "2026-10-17T16:45:03.786Z",
+        "count": 33,
+        "finishedAt": "2026-10-17T16:45:03.790Z"
+      },
+      {
+        "id": "enrich",
+        "name": "证据富化",
+        "status": "completed",
+        "detail": "完成 7 个维度处理并记录缺失字段；规则来源分不是准确率或统计概率",
+        "durationMs": 85,
+        "startedAt": "2026-10-17T16:45:03.794Z",
+        "count": 33,
+        "finishedAt": "2026-10-17T16:45:03.881Z"
+      },
+      {
+        "id": "correlate",
+        "name": "资产关联",
+        "status": "completed",
+        "detail": "关联 3 项资产：2 条版本命中，38 条待核验；未匹配不等于无风险",
+        "durationMs": 2,
+        "startedAt": "2026-10-17T16:45:03.885Z",
+        "count": 41,
+        "finishedAt": "2026-10-17T16:45:03.890Z"
+      },
+      {
+        "id": "verify",
+        "name": "证据核验",
+        "status": "completed",
+        "detail": "46/46 条通过来源链接及快照哈希完整性检查；此检查不等于事实准确率评测",
+        "durationMs": 3,
+        "startedAt": "2026-10-17T16:45:03.893Z",
+        "count": 46,
+        "finishedAt": "2026-10-17T16:45:03.899Z"
+      },
+      {
+        "id": "report",
+        "name": "生成报告",
+        "status": "completed",
+        "detail": "已生成报告与处置建议，SHA-256 3edf989a592b18c8…",
+        "durationMs": 7,
+        "startedAt": "2026-10-17T16:45:03.901Z",
+        "count": 1,
+        "finishedAt": "2026-10-17T16:45:03.911Z"
+      }
+    ],
+    "summary": "实时采集完成，处理 33 条情报；主站成功 6，官方备用 1，失败 0",
+    "sourceResults": [
+      {
+        "id": "nvd",
+        "name": "NVD 漏洞库",
+        "category": "vulnerability",
+        "categoryLabel": "公开漏洞数据库",
+        "url": "https://nvd.nist.gov/",
+        "adapter": "nvd",
+        "description": "NVD 2.0 API，Ollama 关键词结果页，最多 20 条；非全量增量采集",
+        "status": "healthy",
+        "lastSync": "2026-10-17T16:44:54.186Z",
+        "count": 20,
+        "error": null,
+        "detail": "NVD API 返回 20 条，版本区间保留待核验",
+        "mode": "live",
+        "lastSuccess": "2026-10-17T16:44:54.186Z",
+        "contentHash": "f26b8148ac19e63bf854e92e3ad7ece69467d6509f0f06926c2ccb801b5cc27e",
+        "changed": true,
+        "lastPrimarySuccess": "2026-10-17T16:44:54.186Z",
+        "contentHashes": {
+          "https://services.nvd.nist.gov/rest/json/cves/2.0?keywordSearch=ollama&resultsPerPage=20": "f26b8148ac19e63bf854e92e3ad7ece69467d6509f0f06926c2ccb801b5cc27e"
+        },
+        "errorCode": null,
+        "transport": {
+          "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?keywordSearch=ollama&resultsPerPage=20",
+          "mode": "primary",
+          "attempts": 1,
+          "redirects": 0,
+          "retries": 0
+        }
+      },
+      {
+        "id": "github",
+        "name": "GitHub Security Advisories",
+        "category": "repository",
+        "categoryLabel": "代码仓库与安全公告",
+        "url": "https://github.com/advisories",
+        "adapter": "github",
+        "description": "公开安全公告 API，最近 100 条中筛选 AI 产品",
+        "status": "healthy",
+        "lastSync": "2026-10-17T16:44:54.882Z",
+        "count": 2,
+        "error": null,
+        "detail": "检查最近 100 条公开公告，AI 相关 2 条；不声称全量覆盖",
+        "mode": "live",
+        "lastSuccess": "2026-10-17T16:44:54.882Z",
+        "contentHash": "ab37d43beab4161d6e796e902b689c4b6b7205bb743b2b0c7524721d6dadc502",
+        "changed": false,
+        "lastPrimarySuccess": "2026-10-17T16:44:54.882Z",
+        "contentHashes": {
+          "https://api.github.com/advisories?per_page=100&type=reviewed": "ab37d43beab4161d6e796e902b689c4b6b7205bb743b2b0c7524721d6dadc502"
+        },
+        "errorCode": null,
+        "transport": {
+          "url": "https://api.github.com/advisories?per_page=100&type=reviewed",
+          "mode": "primary",
+          "attempts": 1,
+          "redirects": 0,
+          "retries": 0
+        }
+      },
+      {
+        "id": "vendor",
+        "name": "Hugging Face 安全公告",
+        "category": "vendor",
+        "categoryLabel": "厂商安全公告",
+        "url": "https://huggingface.co/docs/hub/security-pickle",
+        "adapter": "page",
+        "description": "固定官方安全页面变更监测；主站不可用时实时读取官方 GitHub 同文档源码，并明确标记备用状态",
+        "status": "degraded",
+        "lastSync": "2026-10-17T16:45:03.774Z",
+        "count": 0,
+        "error": null,
+        "detail": "固定官方页面已检查，正文 11398 字符；变更哈希已记录；主站请求失败：连接或读取来源超时，请检查网络或代理；已实时读取 Hugging Face 官方 GitHub 同文档源码（备用成功），不代表主站恢复",
+        "mode": "live",
+        "lastSuccess": "2026-10-17T16:45:03.774Z",
+        "lastPrimarySuccess": null,
+        "contentHash": "773eb52dd633fcd4d9492937cf48fd5845f6f2ded8589c99a67b7afcae751940",
+        "contentHashes": {
+          "https://api.github.com/repos/huggingface/hub-docs/contents/docs/hub/security-pickle.md?ref=main": "773eb52dd633fcd4d9492937cf48fd5845f6f2ded8589c99a67b7afcae751940"
+        },
+        "changed": false,
+        "errorCode": null,
+        "transport": {
+          "url": "https://api.github.com/repos/huggingface/hub-docs/contents/docs/hub/security-pickle.md?ref=main",
+          "mode": "official-mirror",
+          "primaryUrl": "https://huggingface.co/docs/hub/security-pickle",
+          "primaryErrorUrl": "https://huggingface.co/docs/hub/security-pickle",
+          "primaryError": "连接或读取来源超时，请检查网络或代理",
+          "primaryErrorCode": "TIMEOUT",
+          "mirrorStatus": "succeeded",
+          "attempts": 2,
+          "redirects": 0,
+          "retries": 0
+        }
+      },
+      {
+        "id": "blog",
+        "name": "Trail of Bits 安全研究",
+        "category": "blog",
+        "categoryLabel": "专业安全博客",
+        "url": "https://blog.trailofbits.com/index.xml",
+        "adapter": "blog",
+        "description": "官方 RSS，最多读取 15 篇 AI 相关研究摘要",
+        "status": "healthy",
+        "lastSync": "2026-10-17T16:44:53.832Z",
+        "count": 1,
+        "error": null,
+        "detail": "官方 RSS 检查 15 篇，AI 相关 1 篇",
+        "mode": "live",
+        "lastSuccess": "2026-10-17T16:44:53.832Z",
+        "contentHash": "86a1faac2d08bd01281efcb72ebb6c57a9a4213aa61ebf055b77ceb093e476f0",
+        "changed": false,
+        "lastPrimarySuccess": "2026-10-17T16:44:53.832Z",
+        "contentHashes": {
+          "https://blog.trailofbits.com/index.xml": "86a1faac2d08bd01281efcb72ebb6c57a9a4213aa61ebf055b77ceb093e476f0"
+        },
+        "errorCode": null,
+        "transport": {
+          "url": "https://blog.trailofbits.com/index.xml",
+          "mode": "primary",
+          "attempts": 1,
+          "redirects": 0,
+          "retries": 0
+        }
+      },
+      {
+        "id": "arxiv",
+        "name": "arXiv AI 安全论文",
+        "category": "paper",
+        "categoryLabel": "学术论文",
+        "url": "https://arxiv.org/",
+        "adapter": "arxiv",
+        "description": "arXiv Atom API，prompt injection 关键词最新 10 篇",
+        "status": "healthy",
+        "lastSync": "2026-10-17T16:44:53.563Z",
+        "count": 10,
+        "error": null,
+        "detail": "arXiv Atom 返回 10 篇论文",
+        "mode": "live",
+        "lastSuccess": "2026-10-17T16:44:53.563Z",
+        "contentHash": "8c25073cdddf54cee7e54a644a41f578100cea4eb56899c3c16473553002431e",
+        "changed": false,
+        "lastPrimarySuccess": "2026-10-17T16:44:53.563Z",
+        "contentHashes": {
+          "https://export.arxiv.org/api/query?search_query=all:%22prompt%20injection%22&start=0&max_results=10&sortBy=submittedDate&sortOrder=descending": "8c25073cdddf54cee7e54a644a41f578100cea4eb56899c3c16473553002431e"
+        },
+        "errorCode": null,
+        "transport": {
+          "url": "https://export.arxiv.org/api/query?search_query=all:%22prompt%20injection%22&start=0&max_results=10&sortBy=submittedDate&sortOrder=descending",
+          "mode": "primary",
+          "attempts": 1,
+          "redirects": 0,
+          "retries": 0
+        }
+      },
+      {
+        "id": "standards",
+        "name": "NIST AI RMF / OWASP",
+        "category": "standard",
+        "categoryLabel": "标准与安全框架",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "adapter": "page",
+        "description": "固定官方框架页面变更监测，不代表全站发现",
+        "status": "healthy",
+        "lastSync": "2026-10-17T16:44:53.935Z",
+        "count": 0,
+        "error": null,
+        "detail": "固定官方页面已检查，正文 7322 字符；变更哈希已记录",
+        "mode": "live",
+        "lastSuccess": "2026-10-17T16:44:53.935Z",
+        "contentHash": "2e2a563819a8d489d48035ebbafed6c984c31960b93e347b9124a36d6cb9b952",
+        "changed": false,
+        "lastPrimarySuccess": "2026-10-17T16:44:53.935Z",
+        "contentHashes": {
+          "https://www.nist.gov/itl/ai-risk-management-framework": "2e2a563819a8d489d48035ebbafed6c984c31960b93e347b9124a36d6cb9b952"
+        },
+        "errorCode": null,
+        "transport": {
+          "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+          "mode": "primary",
+          "attempts": 1,
+          "redirects": 0,
+          "retries": 0
+        }
+      },
+      {
+        "id": "policy",
+        "name": "中国网信网 AI 政策",
+        "category": "policy",
+        "categoryLabel": "政府政策",
+        "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+        "adapter": "page",
+        "description": "生成式人工智能服务管理暂行办法，固定页面变更监测",
+        "status": "healthy",
+        "lastSync": "2026-10-17T16:44:53.408Z",
+        "count": 0,
+        "error": null,
+        "detail": "固定官方页面已检查，正文 4084 字符；变更哈希已记录",
+        "mode": "live",
+        "lastSuccess": "2026-10-17T16:44:53.408Z",
+        "contentHash": "5d9bc1c66d14f95ff85d0897a8eddf669ccb81e533fd324e8f3c09fc990e9c25",
+        "changed": false,
+        "lastPrimarySuccess": "2026-10-17T16:44:53.408Z",
+        "contentHashes": {
+          "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm": "5d9bc1c66d14f95ff85d0897a8eddf669ccb81e533fd324e8f3c09fc990e9c25"
+        },
+        "errorCode": null,
+        "transport": {
+          "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+          "mode": "primary",
+          "attempts": 1,
+          "redirects": 0,
+          "retries": 0
+        }
+      }
+    ],
+    "sourceStats": {
+      "total": 7,
+      "primary": 6,
+      "mirrored": 1,
+      "failed": 0
+    }
+  },
+  "verifiedFixCheck": {
+    "id": "CVE-2024-37032",
+    "fixed": "0.1.34",
+    "remediation": "升级至 0.1.34 或更新版本；按公告核验网络暴露与访问控制。",
+    "evidence": [
+      {
+        "url": "https://www.wiz.io/blog/probllama-ollama-vulnerability-cve-2024-37032",
+        "snapshot": true,
+        "mode": "snapshot",
+        "hash": "d30c15f993969c0eac6571bbfa15d2e04a53f9b4b2c3a89f0da851207a521b74"
+      },
+      {
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-37032",
+        "snapshot": false,
+        "mode": "live",
+        "hash": "9260d765550910d9ac6ca4d627978bf5cd243e9dd370446c2bdbfdaa21bb8379"
+      }
+    ]
+  },
+  "note": "短时真实联网验收，非72小时连续监测。"
+}

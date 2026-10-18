@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-10-17T16:45:20.413Z",
+  "integrity": {
+    "hashChain": "verified",
+    "records": 12,
+    "lastHash": "66d1b065fccaef77d2837a041f552062982212ea6f3a72ff8043ddfae0ac3921",
+    "note": "本机追加日志哈希链能发现意外修改，不是第三方时间戳或数字签名。"
+  },
+  "totals": {
+    "attempts": 2,
+    "terminalRuns": 2,
+    "completed": 0,
+    "partial": 2,
+    "failed": 0,
+    "interrupted": 0,
+    "cancelled": 0,
+    "requestFailures": 0,
+    "primary": 12,
+    "mirrored": 2,
+    "sourceFailures": 0,
+    "sourceUnknown": 0
+  },
+  "sources": [
+    {
+      "id": "nvd",
+      "name": "NVD 漏洞库",
+      "primary": 2,
+      "mirrored": 0,
+      "failed": 0,
+      "unknown": 0,
+      "primaryRecoveries": 0,
+      "lastAvailability": "primary",
+      "lastError": null
+    },
+    {
+      "id": "github",
+      "name": "GitHub Security Advisories",
+      "primary": 2,
+      "mirrored": 0,
+      "failed": 0,
+      "unknown": 0,
+      "primaryRecoveries": 0,
+      "lastAvailability": "primary",
+      "lastError": null
+    },
+    {
+      "id": "vendor",
+      "name": "Hugging Face 安全公告",
+      "primary": 0,
+      "mirrored": 2,
+      "failed": 0,
+      "unknown": 0,
+      "primaryRecoveries": 0,
+      "lastAvailability": "mirrored",
+      "lastError": "连接或读取来源超时，请检查网络或代理"
+    },
+    {
+      "id": "blog",
+      "name": "Trail of Bits 安全研究",
+      "primary": 2,
+      "mirrored": 0,
+      "failed": 0,
+      "unknown": 0,
+      "primaryRecoveries": 0,
+      "lastAvailability": "primary",
+      "lastError": null
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv AI 安全论文",
+      "primary": 2,
+      "mirrored": 0,
+      "failed": 0,
+      "unknown": 0,
+      "primaryRecoveries": 0,
+      "lastAvailability": "primary",
+      "lastError": null
+    },
+    {
+      "id": "standards",
+      "name": "NIST AI RMF / OWASP",
+      "primary": 2,
+      "mirrored": 0,
+      "failed": 0,
+      "unknown": 0,
+      "primaryRecoveries": 0,
+      "lastAvailability": "primary",
+      "lastError": null
+    },
+    {
+      "id": "policy",
+      "name": "中国网信网 AI 政策",
+      "primary": 2,
+      "mirrored": 0,
+      "failed": 0,
+      "unknown": 0,
+      "primaryRecoveries": 0,
+      "lastAvailability": "primary",
+      "lastError": null
+    }
+  ],
+  "sessions": [
+    {
+      "sessionId": "37ff9c3e-19c3-4623-b262-b50001b3d811",
+      "startedAt": "2026-10-17T16:39:34.211Z",
+      "endedAt": "2026-10-17T16:39:45.025Z",
+      "recordedThrough": "2026-10-17T16:39:45.025Z",
+      "reason": "once",
+      "targetHours": 72,
+      "intervalMinutes": 30,
+      "recordedHours": 0.003003888888888889
+    },
+    {
+      "sessionId": "1778ba8f-1a19-424b-bd30-809c1a95d966",
+      "startedAt": "2026-10-17T16:44:53.145Z",
+      "endedAt": "2026-10-17T16:45:04.047Z",
+      "recordedThrough": "2026-10-17T16:45:04.047Z",
+      "reason": "once",
+      "targetHours": 72,
+      "intervalMinutes": 30,
+      "recordedHours": 0.0030283333333333334
+    }
+  ],
+  "coverage": {
+    "observationSpanHours": 0.09160833333333333,
+    "recordedSessionHours": 0.006032222222222222,
+    "maximumSampleGapHours": 0.08859388888888889,
+    "gapExceedsSchedule": false,
+    "pendingCycleId": null,
+    "note": "跨度不等于连续覆盖；暂停、断网、主站失败和备用成功分别保留。仅有一次样本不能证明 72 小时运行。"
+  },
+  "publicationLatency": {
+    "count": 0,
+    "timestampPrecisionCount": 0,
+    "datePrecisionCount": 0,
+    "minimumMs": null,
+    "medianMs": null,
+    "p95Ms": null,
+    "maximumMs": null,
+    "samples": [],
+    "note": "无合格新入库条目时为 null，不以旧快照、重复采集或缺失发布时间填充。"
+  }
+}
