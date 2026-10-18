@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "dataset": {
+    "id": "annotation-format-example-only",
+    "status": "example",
+    "description": "仅演示标注格式。所有样本均为虚构且明确排除正式统计；不是独立测试集，也不能用于准确率宣传。",
+    "frozenAt": null,
+    "annotationSource": "待由未参与开发用例编写的标注者提供",
+    "sourceSnapshot": "待记录已核验原始公告/产品文档的归档路径、日期及哈希",
+    "notUsedForDevelopment": false
+  },
+  "samples": [
+    {
+      "id": "EXAMPLE-VERSION-EXCLUDED",
+      "category": "version",
+      "example": true,
+      "excludeFromMetrics": true,
+      "question": "【虚构格式示例】示例产品 ExampleWidget 2.0 是否位于 EXAMPLE-ADVISORY-A 公告的影响区间？修复边界是什么？",
+      "gold": {
+        "citationIds": ["EXAMPLE-ADVISORY-A"],
+        "abstained": false,
+        "answerRubric": ["此处应由人工填写从归档公告核验的精确版本边界、是否受影响与修复结论；本示例没有真实结论。"]
+      }
+    },
+    {
+      "id": "EXAMPLE-PRODUCT-EXCLUDED",
+      "category": "product",
+      "example": true,
+      "excludeFromMetrics": true,
+      "question": "【虚构格式示例】ExampleWidget 与名称相近的 ExampleWidgetSDK 是否属于同一受影响产品？",
+      "gold": {
+        "citationIds": ["EXAMPLE-PRODUCT-DOC"],
+        "abstained": false,
+        "answerRubric": ["此处应人工核验产品边界、别名与不能从名称相似性推出的结论；本示例没有真实结论。"]
+      }
+    },
+    {
+      "id": "EXAMPLE-MULTIDOC-EXCLUDED",
+      "category": "multi-document",
+      "example": true,
+      "excludeFromMetrics": true,
+      "question": "【虚构格式示例】对照两份公告，分别列出 ExampleWidget 与 ExampleEngine 的受影响版本、修复版本和处置建议。",
+      "gold": {
+        "citationIds": ["EXAMPLE-ADVISORY-A", "EXAMPLE-ADVISORY-B"],
+        "abstained": false,
+        "answerRubric": ["此处应逐条写明两个产品各自结论及来源，检查是否错误混用版本边界；本示例没有真实结论。"]
+      }
+    },
+    {
+      "id": "EXAMPLE-ABSTENTION-EXCLUDED",
+      "category": "abstention",
+      "example": true,
+      "excludeFromMetrics": true,
+      "question": "【虚构格式示例】资料未收录的 ExampleUnknown 版本是否已经修复？",
+      "gold": {
+        "citationIds": [],
+        "abstained": true,
+        "answerRubric": ["明确说明证据不足，不编造受影响或修复版本；此示例仅演示拒答标注格式。"]
+      }
+    }
+  ]
+}

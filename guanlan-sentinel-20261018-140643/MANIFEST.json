@@ -1,0 +1,292 @@
+﻿[
+    {
+        "path":  ".env.example",
+        "sha256":  "66d0588c9e22931bc346fc95f932dfdec347f44a16327a174ed14e10d0d4eab4",
+        "bytes":  688
+    },
+    {
+        "path":  ".github/workflows/verify.yml",
+        "sha256":  "f1364cc6e8989a8adf84ae54c86c64dd7af9f1ec1163243e7472a4be54056cf8",
+        "bytes":  453
+    },
+    {
+        "path":  ".gitignore",
+        "sha256":  "c1fe8ffea2f13f22fdc1217c437e1cfd9ab4775eb6f7a4e561937096fc9b8365",
+        "bytes":  494
+    },
+    {
+        "path":  "artifacts/evaluation.json",
+        "sha256":  "55fa0be3bb6170800f23102035b6d0d69423f6b935fe1392ca38917dcbfd3219",
+        "bytes":  19901
+    },
+    {
+        "path":  "artifacts/evaluation.md",
+        "sha256":  "9f437a82471716ff95f257ace1aa73099a180530246587096c0dcce277115fd7",
+        "bytes":  723
+    },
+    {
+        "path":  "artifacts/live-smoke.json",
+        "sha256":  "04c76f31f3dd25369e5bb244babd378a67ba56bfdec2c874c65cd7118ad09c9c",
+        "bytes":  13225
+    },
+    {
+        "path":  "artifacts/monitor-smoke.jsonl",
+        "sha256":  "56b72a121c8acb816a2d025ea907d5b377d893d31201197fed543d820a185421",
+        "bytes":  19684
+    },
+    {
+        "path":  "artifacts/monitor-smoke-summary.json",
+        "sha256":  "8838c37ed54358cb45751a49519d4f115a3fe92d4044a47fdbe0611a0eea03bb",
+        "bytes":  3944
+    },
+    {
+        "path":  "artifacts/rag-settings.png",
+        "sha256":  "9cb2036fbcd79f73fa2425057a06839ce4399f7ef265eca26107d64d45d8e6b2",
+        "bytes":  62239
+    },
+    {
+        "path":  "artifacts/rag-validation.json",
+        "sha256":  "4572e073e2d6a73ece09babdffe8318f77f26ae7f648d05700db0a4288897946",
+        "bytes":  1098
+    },
+    {
+        "path":  "artifacts/system-tests.txt",
+        "sha256":  "7ce527d6940022e82c5fd3b15c8bb8a3adee074a4e5ba03eb2172d83e10d43f7",
+        "bytes":  13692
+    },
+    {
+        "path":  "artifacts/workspace-preview.png",
+        "sha256":  "d2c3469db6b0b4cde125424573232d6eb2de740e48cdc18d76a2727af0159f25",
+        "bytes":  55903
+    },
+    {
+        "path":  "data/asset-example.json",
+        "sha256":  "49f66832703df245890ec3e2fbc6a6efa4db0e5c8e2029e589b45c8d065a3a61",
+        "bytes":  517
+    },
+    {
+        "path":  "data/evaluation/template.json",
+        "sha256":  "3222ce39b8aa571732047ead0af46bb738d95d17f40e765950d50cf8ae16a2a9",
+        "bytes":  2649
+    },
+    {
+        "path":  "data/sbom-example.json",
+        "sha256":  "520aa3c2cd1c1b507598c987e4719b078c8a7be75d94b8844bccdcaf3c83a4cc",
+        "bytes":  381
+    },
+    {
+        "path":  "data/verified_sources.json",
+        "sha256":  "7efadfc2faddc45047d3cbf978f882bd504ead055006f336ce5db6897a812c3c",
+        "bytes":  20034
+    },
+    {
+        "path":  "Dockerfile",
+        "sha256":  "6fac82a3e97fbd774e365f67d56350233b1036cc10b2b6cea38535dfce90a2b7",
+        "bytes":  394
+    },
+    {
+        "path":  "docs/architecture.md",
+        "sha256":  "f61f4a1a50f17387b03331cc2f05f079205acfac35118481b9d8631cd864c41f",
+        "bytes":  7454
+    },
+    {
+        "path":  "docs/competition-plan.md",
+        "sha256":  "bb290b9c014636741c6e1c0a1bb1772b6ca7b8d9142620a460aeb2e804386973",
+        "bytes":  4285
+    },
+    {
+        "path":  "docs/demo-script.md",
+        "sha256":  "26685f6b495a9c8deb56781f987a43aa4935c6146ada712639fe50aff590abb1",
+        "bytes":  3850
+    },
+    {
+        "path":  "docs/evaluation.md",
+        "sha256":  "e4a5f8f1849919a9d842501a8d1be392f24b6f51120f7234b69c4ec6cc9585ff",
+        "bytes":  9088
+    },
+    {
+        "path":  "docs/monitoring.md",
+        "sha256":  "665629a55a61c04145dd86070996485f95a3885b1d0e86ef8e4649b54a534e9a",
+        "bytes":  5493
+    },
+    {
+        "path":  "docs/rag.md",
+        "sha256":  "58460890bab02997c3a2e1f3c65ecc01daebe1cecaaf236a8c83767534c44a59",
+        "bytes":  7454
+    },
+    {
+        "path":  "docs/report-content.json",
+        "sha256":  "e714699dcc246b1ffd8f2db5db0b2f7270be98f62262f09bd2206c34ffd10859",
+        "bytes":  14289
+    },
+    {
+        "path":  "docs/research.md",
+        "sha256":  "e43efa376f66ce074c2f886509df05ef1bc61ddb1433bb7c89a377d33180c288",
+        "bytes":  2807
+    },
+    {
+        "path":  "docs/source/赛题九-官方命题.pdf",
+        "sha256":  "37f28bc38db91ec0407551b1254c8bc882432a8488ce896c681e1210814c6cf3",
+        "bytes":  260044
+    },
+    {
+        "path":  "docs/STATUS.md",
+        "sha256":  "6b4e87551bd125c9b513a14239713b62f6c80fcd13a9cd9ad3ce679cdebe0104",
+        "bytes":  7798
+    },
+    {
+        "path":  "lib/analysis.mjs",
+        "sha256":  "ae6485d2717c00ab079349108345488d1ac8c6c24d23c6a75f48c696034f6eee",
+        "bytes":  9156
+    },
+    {
+        "path":  "lib/collectors.mjs",
+        "sha256":  "61a4a80343fef87e10e642087be25095ad0d0e7552b5563cefaa6ccef9d46fa0",
+        "bytes":  20456
+    },
+    {
+        "path":  "lib/ingestion.mjs",
+        "sha256":  "6b041b01e75003210da0458ddfdb3d659006d21117d286206a1ed75b7caee973",
+        "bytes":  2836
+    },
+    {
+        "path":  "lib/intelligence.mjs",
+        "sha256":  "ce2204386b0cc04fef6b2de904ddb0c3f60cb4cc6cd2ad8c94ba5cf18f412e06",
+        "bytes":  11550
+    },
+    {
+        "path":  "lib/model.mjs",
+        "sha256":  "55abac4537aa39fb600cc9101d705353edb8fec119aa939776767191094e8bad",
+        "bytes":  18542
+    },
+    {
+        "path":  "lib/rag.mjs",
+        "sha256":  "66e012802e733e21b871e3daa92a916bbee29e0272213c0bbbda6a88b2f26e26",
+        "bytes":  20914
+    },
+    {
+        "path":  "lib/store.mjs",
+        "sha256":  "c4d79322e999ef4aab53143fb92d051001ac2b8446cc0b8072aace8bdaae200a",
+        "bytes":  3204
+    },
+    {
+        "path":  "output/观澜技术报告.pdf",
+        "sha256":  "21e0f5e1aea2e292c94555ec9ab076efab06d1118c4e10f17153ceb5aab6568d",
+        "bytes":  146060
+    },
+    {
+        "path":  "package.json",
+        "sha256":  "9fc9f9f81588242fc3b88d5fd44ca065998db29336020d24a5a9da2cc066f916",
+        "bytes":  634
+    },
+    {
+        "path":  "README.md",
+        "sha256":  "72b76851db184b1f7a7037eae417791b814169948156b29f9c18b2faa9de4072",
+        "bytes":  8579
+    },
+    {
+        "path":  "scripts/build-report.py",
+        "sha256":  "6084faaa33e459187b8dedab8eb826043dd18e1ee816c093e240972a39886bfa",
+        "bytes":  14444
+    },
+    {
+        "path":  "scripts/build-seed.mjs",
+        "sha256":  "f431bddb0d4416572fac3421a876d7d5e036c86aaaa143343c28639fb62ba71e",
+        "bytes":  7917
+    },
+    {
+        "path":  "scripts/evaluate.mjs",
+        "sha256":  "803fed3adb4f4addf0d722da38f4b6c265f3035ef495ffb74325955101677455",
+        "bytes":  3553
+    },
+    {
+        "path":  "scripts/evaluate-heldout.mjs",
+        "sha256":  "c49cafc7454481e652878d733d50e355279c82cd82ea27253bf0ef3a353b426f",
+        "bytes":  21973
+    },
+    {
+        "path":  "scripts/monitor-observation.mjs",
+        "sha256":  "384c40c0380bb53d6bb33272265e38a9519ad4ba2512fc9637361a84786101dd",
+        "bytes":  20735
+    },
+    {
+        "path":  "scripts/package.ps1",
+        "sha256":  "0dd800ac172175f3d3d27d9c6532eead48156a4c760474f6ba3379a1a43ceacb",
+        "bytes":  4212
+    },
+    {
+        "path":  "scripts/summarize-monitor.mjs",
+        "sha256":  "bbf8fd7f86c9abd93d940ec8125a85087d7a3106c5b9e95bd53a3a1e7ba09346",
+        "bytes":  915
+    },
+    {
+        "path":  "server.mjs",
+        "sha256":  "432709b61eb2b5cd7580493010070f65d3b281104cc5abf66d34086283a0b5f5",
+        "bytes":  25408
+    },
+    {
+        "path":  "static/app.js",
+        "sha256":  "bf8a39cb49e565f306e6f3785c783f7022257361523e4435c6b409b90dea4342",
+        "bytes":  66798
+    },
+    {
+        "path":  "static/index.html",
+        "sha256":  "35097aa92cb0d23bb9eaa7074abd4646e87fb1fe23ae31697df9934dbfb2ceb3",
+        "bytes":  2405
+    },
+    {
+        "path":  "static/style.css",
+        "sha256":  "c95d1ab8249e38cd6ae4abd7323841480b2870489edf9aa79f37c054b87eefb5",
+        "bytes":  37579
+    },
+    {
+        "path":  "tests/collectors.test.mjs",
+        "sha256":  "5abb60067662d0cf88953be643ec21f6b3ade2bd822efa69157f066311d21921",
+        "bytes":  13591
+    },
+    {
+        "path":  "tests/evaluation.test.mjs",
+        "sha256":  "7860823cd292110700733a797525e0d757f2f97bbb77e26506b0212ac75cde55",
+        "bytes":  13825
+    },
+    {
+        "path":  "tests/ingestion.test.mjs",
+        "sha256":  "ac55308158d8b0a39c3ee125dd0a26f954b5112a8098d2c0f5660edde51bd16f",
+        "bytes":  9256
+    },
+    {
+        "path":  "tests/intelligence.test.mjs",
+        "sha256":  "ec2b3014c1ec8034c69b47b4674e9510aecddf0047ec24b0d862fddd0c6be64f",
+        "bytes":  7777
+    },
+    {
+        "path":  "tests/model.test.mjs",
+        "sha256":  "e38a7908b596341dc16746b50bc04cd91890f77df36d2c3f8952d99eb19933ea",
+        "bytes":  14220
+    },
+    {
+        "path":  "tests/monitor-observation.test.mjs",
+        "sha256":  "72f200826494a6a93d25bee72650d5556526bac3cccaca4a635bd4af07e8ca85",
+        "bytes":  12877
+    },
+    {
+        "path":  "tests/rag.test.mjs",
+        "sha256":  "24771243d4739069ab6413d70d5ede64ece960803cdcb15fcf7fc6e9a9b9eccb",
+        "bytes":  13362
+    },
+    {
+        "path":  "tests/rag-system.test.mjs",
+        "sha256":  "852545c2c03ee592bfb8b7ca9b360598f7d495bc45e039a8c256f87547288ccc",
+        "bytes":  12103
+    },
+    {
+        "path":  "tests/system.test.mjs",
+        "sha256":  "bce6a0a22fd05fb6bc1ae4cb04f0449523c340220270a0d10db1b5b7f60cfb12",
+        "bytes":  7019
+    },
+    {
+        "path":  "启动观澜.cmd",
+        "sha256":  "758f0c65b622303e18cf727f0d92bc8153ccecdb0366914f8f9f0ddd3d005037",
+        "bytes":  318
+    }
+]
